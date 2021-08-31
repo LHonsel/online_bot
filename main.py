@@ -12,7 +12,8 @@ from telegram.ext import (
 )
 import pandas as pd
 from send_message import telegram_bot_sendtext
-
+import os
+PORT = int(os.environ.get('PORT', 5000))
 
 
 
