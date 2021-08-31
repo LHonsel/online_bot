@@ -320,7 +320,10 @@ def main() -> None:
     dispatcher.add_handler(conv_handler)
 
     # Start the Bot
-    updater.start_polling()
+    updater.start_webhook(listen="0.0.0.0",
+                          port=int(PORT),
+                          url_path="1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
+    updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + "1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
 
     updater.idle()
 
