@@ -12,8 +12,7 @@ from telegram.ext import (
 )
 import pandas as pd
 from send_message import telegram_bot_sendtext
-import os
-PORT = int(os.environ.get('PORT', 8443))
+
 
 
 
@@ -320,10 +319,7 @@ def main() -> None:
     dispatcher.add_handler(conv_handler)
 
     # Start the Bot
-    updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path="1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
-    updater.bot.setWebhook('https://manu-online.herokuapp.com/' + "1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
+    updater.start_polling()
 
     updater.idle()
 
