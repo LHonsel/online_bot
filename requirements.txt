@@ -1,2 +1,2 @@
-telegram 
+python-telegram==0.0.1
 pandas

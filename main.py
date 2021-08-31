@@ -323,7 +323,7 @@ def main() -> None:
     updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path="1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
-    updater.bot.setWebhook('https://secret-bayou-62754.herokuapp.com/' + "1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
+    updater.bot.setWebhook('https://manu-online.herokuapp.com/' + "1998449664:AAETVJUU7o_7uG7UCELz3bAG6gWZFAUJAF4")
 
     updater.idle()
 
